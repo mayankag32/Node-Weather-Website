@@ -10,6 +10,8 @@ console.log(__dirname) // for getting current directory
 console.log(__filename) // for current filename
 const app = express() //to initalize a express server
 
+const port = process.env.PORT || 3000
+
 app.set('view engine', 'hbs'); // to sent template engines
 app.set('views',path.join(__dirname,'../templates/views')) //set view location
 const partialPath = path.join(__dirname,'../templates/partials')
@@ -87,6 +89,6 @@ app.get('*' , (req,res)=>{
     })
 })
 
-app.listen(3000,() =>{
+app.listen(port,() =>{
     console.log('Server is up on port 3000.')
 }) //to start a server
