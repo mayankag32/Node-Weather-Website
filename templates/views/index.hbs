@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel = "icon" href= 'weather.png'>
+
+        <title>Weather App </title>
+    </head>
+    <body>
+        <div class = "main-content">
+            {{>header}}
+            <p> Use This Site to get your Weather! </p>
+            <form>
+                <input placeholder = "Location">
+                <button> Search</button>
+            </form>
+            <p id ="message-1"> </p>
+            <p id = "message-2"> </p>
+        </div>
+        {{>footer}}
+        <script type="text/javascript" src="../js/app.js"></script>
+    </body>
+</html>
