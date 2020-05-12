@@ -1,6 +1,6 @@
 # Node-Weather-Website
 
-A Weather Forecast Website, built using NodeJS.
+A Weather Forecast WebApp, built using NodeJS.
 
 ## API used 
 
